@@ -1,0 +1,3 @@
+/home/fazli-irham/Documents/fp_internshipIRIS/build/CMakeFiles/object_detection.dir
+/home/fazli-irham/Documents/fp_internshipIRIS/build/CMakeFiles/edit_cache.dir
+/home/fazli-irham/Documents/fp_internshipIRIS/build/CMakeFiles/rebuild_cache.dir
