@@ -177,6 +177,30 @@ src/udp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detection.dir/build.make CMakeFiles/lane_detection.dir/src/udp.cpp.s
 .PHONY : src/udp.cpp.s
 
+src/vision.o: src/vision.cpp.o
+.PHONY : src/vision.o
+
+# target to build an object file
+src/vision.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detection.dir/build.make CMakeFiles/lane_detection.dir/src/vision.cpp.o
+.PHONY : src/vision.cpp.o
+
+src/vision.i: src/vision.cpp.i
+.PHONY : src/vision.i
+
+# target to preprocess a source file
+src/vision.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detection.dir/build.make CMakeFiles/lane_detection.dir/src/vision.cpp.i
+.PHONY : src/vision.cpp.i
+
+src/vision.s: src/vision.cpp.s
+.PHONY : src/vision.s
+
+# target to generate assembly for a file
+src/vision.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detection.dir/build.make CMakeFiles/lane_detection.dir/src/vision.cpp.s
+.PHONY : src/vision.cpp.s
+
 src/websocket.o: src/websocket.cpp.o
 .PHONY : src/websocket.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... src/udp.o"
 	@echo "... src/udp.i"
 	@echo "... src/udp.s"
+	@echo "... src/vision.o"
+	@echo "... src/vision.i"
+	@echo "... src/vision.s"
 	@echo "... src/websocket.o"
 	@echo "... src/websocket.i"
 	@echo "... src/websocket.s"

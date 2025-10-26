@@ -6,6 +6,7 @@ add_executable(lane_detection
 src/main.cpp
 src/websocket.cpp
 src/udp.cpp
+src/vision.cpp
 )
 include_directories(${OpenCV_INCLUDE_DIRS} include)
 target_include_directories(lane_detection PRIVATE ${OpenCV_INCLUDE_DIRS})
