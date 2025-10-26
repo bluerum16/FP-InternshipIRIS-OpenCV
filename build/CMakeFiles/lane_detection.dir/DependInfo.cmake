@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/fazli-irham/Documents/fp_internshipIRIS/src/main.cpp" "CMakeFiles/object_detection.dir/src/main.cpp.o" "gcc" "CMakeFiles/object_detection.dir/src/main.cpp.o.d"
+  "/home/fazli-irham/Documents/fp_internshipIRIS/src/main.cpp" "CMakeFiles/lane_detection.dir/src/main.cpp.o" "gcc" "CMakeFiles/lane_detection.dir/src/main.cpp.o.d"
+  "/home/fazli-irham/Documents/fp_internshipIRIS/src/udp.cpp" "CMakeFiles/lane_detection.dir/src/udp.cpp.o" "gcc" "CMakeFiles/lane_detection.dir/src/udp.cpp.o.d"
+  "/home/fazli-irham/Documents/fp_internshipIRIS/src/websocket.cpp" "CMakeFiles/lane_detection.dir/src/websocket.cpp.o" "gcc" "CMakeFiles/lane_detection.dir/src/websocket.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

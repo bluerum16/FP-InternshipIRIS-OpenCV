@@ -12,7 +12,7 @@ int main() {
 
         cv::imshow("Video Frame", frame);
         if (cv::waitKey(30) == 'q') break;
-
+        
         
     }
     

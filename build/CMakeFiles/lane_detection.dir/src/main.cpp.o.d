@@ -1,4 +1,4 @@
-CMakeFiles/object_detection.dir/src/main.cpp.o: \
+CMakeFiles/lane_detection.dir/src/main.cpp.o: \
  /home/fazli-irham/Documents/fp_internshipIRIS/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \

@@ -148,7 +148,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=object_detection
+CMAKE_PROJECT_NAME:STATIC=lane_detection
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -219,13 +219,13 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 OpenCV_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/opencv4
 
 //Value Computed by CMake
-object_detection_BINARY_DIR:STATIC=/home/fazli-irham/Documents/fp_internshipIRIS/build
+lane_detection_BINARY_DIR:STATIC=/home/fazli-irham/Documents/fp_internshipIRIS/build
 
 //Value Computed by CMake
-object_detection_IS_TOP_LEVEL:STATIC=ON
+lane_detection_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-object_detection_SOURCE_DIR:STATIC=/home/fazli-irham/Documents/fp_internshipIRIS
+lane_detection_SOURCE_DIR:STATIC=/home/fazli-irham/Documents/fp_internshipIRIS
 
 
 ########################

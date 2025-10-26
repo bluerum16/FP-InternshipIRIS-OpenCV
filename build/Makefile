@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named object_detection
+# Target rules for targets named lane_detection
 
 # Build rule for target.
-object_detection: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 object_detection
-.PHONY : object_detection
+lane_detection: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lane_detection
+.PHONY : lane_detection
 
 # fast build rule for target.
-object_detection/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_detection.dir/build.make CMakeFiles/object_detection.dir/build
-.PHONY : object_detection/fast
+lane_detection/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detection.dir/build.make CMakeFiles/lane_detection.dir/build
+.PHONY : lane_detection/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_detection.dir/build.make CMakeFiles/object_detection.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detection.dir/build.make CMakeFiles/lane_detection.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -142,7 +142,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_detection.dir/build.make CMakeFiles/object_detection.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detection.dir/build.make CMakeFiles/lane_detection.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -150,8 +150,56 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_detection.dir/build.make CMakeFiles/object_detection.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detection.dir/build.make CMakeFiles/lane_detection.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/udp.o: src/udp.cpp.o
+.PHONY : src/udp.o
+
+# target to build an object file
+src/udp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detection.dir/build.make CMakeFiles/lane_detection.dir/src/udp.cpp.o
+.PHONY : src/udp.cpp.o
+
+src/udp.i: src/udp.cpp.i
+.PHONY : src/udp.i
+
+# target to preprocess a source file
+src/udp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detection.dir/build.make CMakeFiles/lane_detection.dir/src/udp.cpp.i
+.PHONY : src/udp.cpp.i
+
+src/udp.s: src/udp.cpp.s
+.PHONY : src/udp.s
+
+# target to generate assembly for a file
+src/udp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detection.dir/build.make CMakeFiles/lane_detection.dir/src/udp.cpp.s
+.PHONY : src/udp.cpp.s
+
+src/websocket.o: src/websocket.cpp.o
+.PHONY : src/websocket.o
+
+# target to build an object file
+src/websocket.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detection.dir/build.make CMakeFiles/lane_detection.dir/src/websocket.cpp.o
+.PHONY : src/websocket.cpp.o
+
+src/websocket.i: src/websocket.cpp.i
+.PHONY : src/websocket.i
+
+# target to preprocess a source file
+src/websocket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detection.dir/build.make CMakeFiles/lane_detection.dir/src/websocket.cpp.i
+.PHONY : src/websocket.cpp.i
+
+src/websocket.s: src/websocket.cpp.s
+.PHONY : src/websocket.s
+
+# target to generate assembly for a file
+src/websocket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detection.dir/build.make CMakeFiles/lane_detection.dir/src/websocket.cpp.s
+.PHONY : src/websocket.cpp.s
 
 # Help Target
 help:
@@ -161,10 +209,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... object_detection"
+	@echo "... lane_detection"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/udp.o"
+	@echo "... src/udp.i"
+	@echo "... src/udp.s"
+	@echo "... src/websocket.o"
+	@echo "... src/websocket.i"
+	@echo "... src/websocket.s"
 .PHONY : help
 
 
