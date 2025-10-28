@@ -78,6 +78,7 @@ CMakeFiles/lane_detection.dir/src/main.cpp.o: /home/fazli-irham/Documents/fp_int
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/std_function.h \
   /usr/include/c++/13/bits/std_mutex.h \
+  /usr/include/c++/13/bits/std_thread.h \
   /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_bvector.h \
@@ -105,6 +106,7 @@ CMakeFiles/lane_detection.dir/src/main.cpp.o: /home/fazli-irham/Documents/fp_int
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
+  /usr/include/c++/13/bits/this_thread_sleep.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_lock.h \
   /usr/include/c++/13/bits/unique_ptr.h \
@@ -171,6 +173,7 @@ CMakeFiles/lane_detection.dir/src/main.cpp.o: /home/fazli-irham/Documents/fp_int
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
+  /usr/include/c++/13/thread \
   /usr/include/c++/13/tr1/bessel_function.tcc \
   /usr/include/c++/13/tr1/beta_function.tcc \
   /usr/include/c++/13/tr1/ell_integral.tcc \
@@ -510,6 +513,7 @@ CMakeFiles/lane_detection.dir/src/vision.cpp.o: /home/fazli-irham/Documents/fp_i
   /usr/include/c++/13/bits/stl_map.h \
   /usr/include/c++/13/bits/stl_multimap.h \
   /usr/include/c++/13/bits/stl_multiset.h \
+  /usr/include/c++/13/bits/stl_numeric.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_queue.h \
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
@@ -574,10 +578,12 @@ CMakeFiles/lane_detection.dir/src/vision.cpp.o: /home/fazli-irham/Documents/fp_i
   /usr/include/c++/13/memory \
   /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
+  /usr/include/c++/13/numeric \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
+  /usr/include/c++/13/pstl/glue_numeric_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/queue \
   /usr/include/c++/13/ratio \
@@ -838,6 +844,8 @@ CMakeFiles/lane_detection.dir/src/websocket.cpp.o: /home/fazli-irham/Documents/f
   /usr/include/stdc-predef.h
 
 
+/usr/include/c++/13/bits/stl_numeric.h:
+
 /home/fazli-irham/Documents/fp_internshipIRIS/src/vision.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h:
@@ -845,6 +853,8 @@ CMakeFiles/lane_detection.dir/src/websocket.cpp.o: /home/fazli-irham/Documents/f
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+
+/usr/include/c++/13/numeric:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
@@ -948,6 +958,8 @@ CMakeFiles/lane_detection.dir/src/websocket.cpp.o: /home/fazli-irham/Documents/f
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
+/usr/include/c++/13/pstl/glue_numeric_defs.h:
+
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
@@ -1050,9 +1062,7 @@ CMakeFiles/lane_detection.dir/src/websocket.cpp.o: /home/fazli-irham/Documents/f
 
 /usr/include/opencv4/opencv2/flann/lsh_index.h:
 
-/usr/include/c++/13/ctime:
-
-/usr/include/c++/13/deque:
+/usr/include/opencv4/opencv2/flann/kdtree_index.h:
 
 /usr/include/c++/13/cmath:
 
@@ -1159,6 +1169,8 @@ CMakeFiles/lane_detection.dir/src/websocket.cpp.o: /home/fazli-irham/Documents/f
 /usr/include/c++/13/bits/erase_if.h:
 
 /usr/include/c++/13/bits/stringfwd.h:
+
+/usr/include/c++/13/bits/this_thread_sleep.h:
 
 /usr/include/c++/13/bits/shared_ptr.h:
 
@@ -1284,9 +1296,9 @@ CMakeFiles/lane_detection.dir/src/websocket.cpp.o: /home/fazli-irham/Documents/f
 
 /usr/include/c++/13/bits/basic_string.tcc:
 
-/usr/include/c++/13/bits/allocated_ptr.h:
-
 /usr/include/opencv4/opencv2/flann/kdtree_single_index.h:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
 
 /usr/include/c++/13/bit:
 
@@ -1295,10 +1307,6 @@ CMakeFiles/lane_detection.dir/src/websocket.cpp.o: /home/fazli-irham/Documents/f
 /usr/include/c++/13/bits/stl_algo.h:
 
 /usr/include/opencv4/opencv2/flann/ground_truth.h:
-
-/usr/include/c++/13/cstring:
-
-/home/fazli-irham/Documents/fp_internshipIRIS/src/main.cpp:
 
 /usr/include/c++/13/math.h:
 
@@ -1360,6 +1368,10 @@ CMakeFiles/lane_detection.dir/src/websocket.cpp.o: /home/fazli-irham/Documents/f
 
 /usr/include/c++/13/bits/exception.h:
 
+/usr/include/c++/13/bits/memory_resource.h:
+
+/usr/include/c++/13/streambuf:
+
 /usr/include/c++/13/bits/basic_ios.tcc:
 
 /usr/include/c++/13/pstl/execution_defs.h:
@@ -1398,10 +1410,6 @@ CMakeFiles/lane_detection.dir/src/websocket.cpp.o: /home/fazli-irham/Documents/f
 
 /usr/include/c++/13/bits/invoke.h:
 
-/usr/include/c++/13/streambuf:
-
-/usr/include/c++/13/bits/memory_resource.h:
-
 /usr/include/c++/13/bits/memoryfwd.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
@@ -1410,9 +1418,21 @@ CMakeFiles/lane_detection.dir/src/websocket.cpp.o: /home/fazli-irham/Documents/f
 
 /usr/include/opencv4/opencv2/core/matx.hpp:
 
+/home/fazli-irham/Documents/fp_internshipIRIS/src/main.cpp:
+
+/usr/include/c++/13/cstring:
+
+/usr/include/c++/13/ctime:
+
+/usr/include/c++/13/deque:
+
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/c++/13/cwchar:
+
+/usr/include/opencv4/opencv2/flann/kmeans_index.h:
+
+/usr/include/opencv4/opencv2/core/persistence.hpp:
 
 /usr/include/c++/13/ext/aligned_buffer.h:
 
@@ -1468,8 +1488,6 @@ CMakeFiles/lane_detection.dir/src/websocket.cpp.o: /home/fazli-irham/Documents/f
 
 /usr/include/c++/13/pstl/pstl_config.h:
 
-/usr/include/opencv4/opencv2/flann/kdtree_index.h:
-
 /usr/include/c++/13/queue:
 
 /usr/include/c++/13/ratio:
@@ -1479,6 +1497,8 @@ CMakeFiles/lane_detection.dir/src/websocket.cpp.o: /home/fazli-irham/Documents/f
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/13/set:
+
+/usr/include/c++/13/thread:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -1525,6 +1545,8 @@ CMakeFiles/lane_detection.dir/src/websocket.cpp.o: /home/fazli-irham/Documents/f
 /usr/include/opencv4/opencv2/flann/heap.h:
 
 /usr/include/c++/13/tr1/exp_integral.tcc:
+
+/usr/include/c++/13/bits/std_thread.h:
 
 /usr/include/c++/13/tr1/bessel_function.tcc:
 
@@ -1667,7 +1689,3 @@ CMakeFiles/lane_detection.dir/src/websocket.cpp.o: /home/fazli-irham/Documents/f
 /usr/include/opencv4/opencv2/flann/defines.h:
 
 /usr/include/opencv4/opencv2/flann/dynamic_bitset.h:
-
-/usr/include/opencv4/opencv2/core/persistence.hpp:
-
-/usr/include/opencv4/opencv2/flann/kmeans_index.h:

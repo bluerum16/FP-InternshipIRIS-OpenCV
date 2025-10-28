@@ -2,7 +2,13 @@
 #define VISION_HPP
 
 #include <opencv2/opencv.hpp>
+#include <string> 
 
-double kemiringan_jalan(cv::Mat &frame, cv::Mat &output);
+struct LaneInfo {
+    double slope = 0.0;
+    std::string status = "Lost"; 
+};
 
-#endif
+LaneInfo proses_lajur(cv::Mat& frame, cv::Mat& output);
+
+#endif    
