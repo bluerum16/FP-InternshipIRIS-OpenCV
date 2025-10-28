@@ -17,9 +17,8 @@ int main() {
         return -1;
     }
 
-    // --- Variabel Kecepatan dan Jarak ---
-    double totalDistance = 0.0;       // meter
-    const double FAKE_SPEED_CMS = 1666.67; // = 60 km/j dalam cm/s
+    double totalDistance = 0.0;      
+    const double Kecepatan = 1666.67; // dalam cm/s
 
     // --- Loop utama ---
     while (cap.isOpened()) {
@@ -32,13 +31,11 @@ int main() {
         LaneInfo laneInfo = proses_lajur(frame, output);
         t = ((double)cv::getTickCount() - t) / cv::getTickFrequency();
 
-        // Hitung FPS dan jarak tempuh
         double fps = 1.0 / t;
-        totalDistance += FAKE_SPEED_CMS * t / 100.0; // jarak dalam meter
+        totalDistance += Kecepatan * t / 100.0; 
 
         double angle = std::atan(laneInfo.slope) * 180.0 / CV_PI;
 
-        // --- Buat HUD di atas hasil output ---
         cv::Mat hudPanel;
         output.copyTo(hudPanel);
         cv::rectangle(hudPanel, cv::Rect(10, 10, 350, 210), cv::Scalar(0, 0, 0), -1);
@@ -69,14 +66,9 @@ int main() {
         std::string distText = distStream.str();
 
         std::stringstream speedStream;
-        speedStream << "Speed: " << std::fixed << std::setprecision(0) << FAKE_SPEED_CMS << " cm/s";
+        speedStream << "Speed: " << std::fixed << std::setprecision(0) << Kecepatan << " cm/s";
         std::string speedText = speedStream.str();
 
-        // Gauge Kecepatan
-        cv::rectangle(output, cv::Rect(cv::Point(20, 170), cv::Point(270, 190)), cv::Scalar(50, 50, 50), -1);
-        int gaugeWidth = (int)((FAKE_SPEED_CMS / 3000.0) * 250.0);
-        if (gaugeWidth > 250) gaugeWidth = 250;
-        cv::rectangle(output, cv::Rect(cv::Point(20, 170), cv::Point(20 + gaugeWidth, 190)), cv::Scalar(0, 255, 0), -1);
 
         // Tampilkan teks ke layar
         int y_pos = 40;

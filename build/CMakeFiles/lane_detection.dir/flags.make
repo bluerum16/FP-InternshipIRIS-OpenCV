@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/fazli-irham/Documents/fp_internshipIRIS/include -isystem /usr/include/opencv4
+CXX_INCLUDES = -I/home/fazli-irham/Documents/fp_internshipIRIS/include -I/usr/include/nlohmann -isystem /usr/include/opencv4
 
 CXX_FLAGS = 
 

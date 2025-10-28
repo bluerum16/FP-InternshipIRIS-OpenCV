@@ -8,6 +8,10 @@ src/websocket.cpp
 src/udp.cpp
 src/vision.cpp
 )
-include_directories(${OpenCV_INCLUDE_DIRS} include)
+include_directories(${OpenCV_INCLUDE_DIRS} 
+include
+/usr/include
+/usr/include/nlohmann
+)
 target_include_directories(lane_detection PRIVATE ${OpenCV_INCLUDE_DIRS})
-target_link_libraries(lane_detection PRIVATE ${OpenCV_LIBS})
+target_link_libraries(lane_detection PRIVATE ${OpenCV_LIBS} pthread)
