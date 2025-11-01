@@ -10,8 +10,7 @@
 #include "websocket.hpp"    
 
 int main() {
-    // --- 1. Inisialisasi WebSocket ---
-    std::string uri = "ws://localhost:3000"; // Pastikan port ini benar
+    std::string uri = "ws://localhost:3000"; 
     
     if (!ws_init(uri)) {
         std::cerr << "Inisialisasi WebSocket gagal." << std::endl;
